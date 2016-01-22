@@ -1,3 +1,4 @@
-from ggame import App
+from ggame import App, Color, Line
 myapp = App()
 myapp.run()
+
