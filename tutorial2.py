@@ -8,10 +8,12 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-xcoordinates = range(200, 800, 30)
+2circle = CircleAsset(5, thinline, red)
+xcoordinates = range(50, 500, 20)
 
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x)) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x, .5x)) for x in xcoordinates]
+sprites = [Sprite(2circle, (x, .5x + 10)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
