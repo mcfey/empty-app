@@ -11,7 +11,7 @@ mycircle = CircleAsset(5, thinline, blue)
 xcoordinates = range(200, 800, 30)
 
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x + 100)) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x, x)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
